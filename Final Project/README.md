@@ -64,7 +64,7 @@ As we can see in fig 5 and fig 6 the train loss decrease with the epoch. The acc
 If we will compare the 2 graphs side by side, we can see the difference between those 2 models, as we can see in fig 7.
 
 <p align="center">
-  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig6.png" alt="drawing" width="400"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Figs6.png" alt="drawing" width="700"/>
 </p>
 
 ## Discussion

@@ -72,13 +72,18 @@ The results show that there was a faster convergence for the QA model compared t
 
 ### Challenges
 • A main challenge in our task was to find data-set that can be modified to QA format. At first we wanted to work with the IMDB data-set, but once we understood that the text is pretty long and that its going to be complicated to modify its context to a question format, we decided to work with tweets which easier to modify into questions.
+
 • The original tweets data-set was huge and required a lot of computational resources. Hence, we decided to shrink the data-set and work with smaller data-set.
+
 • The data-transformation. We were not sure how to transform the SA data into a QA data. After few trials we decided to try the naive approach.
+
 • During our experiments, we noticed that the loss converges too fast. At first we used 10 epochs, and we noticed that it converges for the final loss value after 4-5 epochs. So if we had more resources we would have checked the affect of the learning rate and how it improves the performance.
 
 ### Conclusions and Future work
 The objective of this project was to investigate how a QA model can predict sentiment from the question itself and without using sentiment ’pre-knowledge’. The results showed that if we are taking an appropriate data-set which can modified to the desired format, we can train a QA model to answer on ’sentimental’ questions with a relative success. For future work, there are several factors that need to be considered ahead:
+
 • The model should be trained and evaluated on a larger data set.
+
 • If using this specific data set, we need to take in consideration the context of the question and combine it with sentiment-related information, in order to improve the detection.
 
 ## References

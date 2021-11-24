@@ -23,7 +23,7 @@ The main problem of this task is to convert sentiment analysis data-set and adap
 The Stanford Question Answering Data-set (SQuAD) is a reading compre- hension data-set, consisting of questions posed by crowdworkers on a set of Wikipedia articles. The answer to every question is a segment of text (a span) from the corresponding reading passage. Recently, SQuAD 2.0 has been re- leased, which includes unanswerable questions. The public leaderboard is avail- able on the SQuAD website.
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig1.png" alt="drawing" width="700"/>
 </p>
 
 The Sentiment140 data-set contains 1,600,000 tweets which were extracted using Twitter’s API . The tweets have been annotated (0 = negative, 4 = positive) and they can be used to detect sentiment. It contains the following 6 fields:
@@ -32,7 +32,7 @@ The Sentiment140 data-set contains 1,600,000 tweets which were extracted using T
 4. Flag: The query (lyx). If there is no query, then this value is NO QUERY. 5. Text: The text of the tweet (lyx is cool).
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig2.png" alt="drawing" width="700"/>
 </p>
 
 
@@ -41,13 +41,13 @@ The original labeled data-set (Positive/Negative) contains 1.6M tweets which equ
 First, we removed all the mentions from the tweets in order to avoid unrec- ognized words and unbalanced word-vector (figure 3).
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig3.png" alt="drawing" width="700"/>
 </p>
 
 Second, we matched the processed data to the QA format by adding a ’default’ question prefix (figure 4).
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig4.png" alt="drawing" width="700"/>
 </p>
 
 And lastly, we divided the modified data to 80% train set and 20% test set, trained the two models on Google Colab for few hours, evaluated the trained models and compared the results.
@@ -56,11 +56,7 @@ And lastly, we divided the modified data to 80% train set and 20% test set, trai
 The following graph shows the train loss VS. the epochs for QA and SA models.
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
-</p>
-
-<p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig5.png" alt="drawing" width="700"/>
 </p>
 
 As we can see in fig 5 and fig 6 the train loss decrease with the epoch. The accuracy of the QA model is 91.83% and the accuracy of SA model is 83.35%.
@@ -68,7 +64,7 @@ As we can see in fig 5 and fig 6 the train loss decrease with the epoch. The acc
 If we will compare the 2 graphs side by side, we can see the difference between those 2 models, as we can see in fig 7.
 
 <p align="center">
-  <img src="" alt="drawing" width="700"/>
+  <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig6.png" alt="drawing" width="700"/>
 </p>
 
 ## Discussion

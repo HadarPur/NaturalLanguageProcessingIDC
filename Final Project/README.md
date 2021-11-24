@@ -5,9 +5,9 @@ Daniel Shterenberg, Hadar Pur, Rotem Feinblat
 Submitted as final project report for the NLP course, IDC, 2021
 
 ## Introduction
-The task of a question answering (QA) system is to automatically answer ques- tions asked by humans, expressed in a natural language. In recent years, plat- forms, where QA systems are applicable, have emerged on the web and gained in popularity. Related to the answering of complex questions, with subjective or ambiguous answers, there is a growing interest in understanding how semantic features can be utilized further to enhance the capability of the systems.
+The task of a question answering (QA) system is to automatically answer questions asked by humans, expressed in a natural language. In recent years, platforms, where QA systems are applicable, have emerged on the web and gained in popularity. Related to the answering of complex questions, with subjective or ambiguous answers, there is a growing interest in understanding how semantic features can be utilized further to enhance the capability of the systems.
 Sentiment analysis is a natural language processing method used to identify and study the subjective information in texts. It is widely used for tasks such as interpreting reviews, analyzing social media, marketing, and finding customer opinions about products. The binary classification task of labeling a document as either positive or negative is called sentiment polarity classification, or just polarity classification.
-In this project, we investigated how question answering model can predict sentiment polarity classification only from the question itself, without any in- formation that contain sentiment in the question.
+In this project, we investigated how question answering model can predict sentiment polarity classification only from the question itself, without any information that contain sentiment in the question.
 In addition to the QA model, an additional baseline model, which consider sentiment, was implemented and used as a reference point for evaluation. The QA model were trained and tested on the popular Stanford Question Answering model by using Tweets sentiment data-set .
 
 ### Related Works
@@ -17,10 +17,10 @@ During the project we inspired by a few sources:
 
 ## Solution
 ### General approach
-The main problem of this task is to convert sentiment analysis data-set and adapt it into a question-answering format that would match to the question- answering SQUAD model. First, we chose a QA model based on the BERT language model. We implemented the SQUAD model and evaluated it, we chose the SA data-set that contain tweets from twitter which were classified to positive and negative feelings. The second step was to adapt the sentiment data to the QA format. We transformed the data to the SQUAD format and then we trained the QA model with the edited sentiment data and compare the results from QA model to Sentiment model.
+The main problem of this task is to convert sentiment analysis data-set and adapt it into a question-answering format that would match to the questionanswering SQUAD model. First, we chose a QA model based on the BERT language model. We implemented the SQUAD model and evaluated it, we chose the SA data-set that contain tweets from twitter which were classified to positive and negative feelings. The second step was to adapt the sentiment data to the QA format. We transformed the data to the SQUAD format and then we trained the QA model with the edited sentiment data and compare the results from QA model to Sentiment model.
 
 ### Data-sets
-The Stanford Question Answering Data-set (SQuAD) is a reading compre- hension data-set, consisting of questions posed by crowdworkers on a set of Wikipedia articles. The answer to every question is a segment of text (a span) from the corresponding reading passage. Recently, SQuAD 2.0 has been re- leased, which includes unanswerable questions. The public leaderboard is avail- able on the SQuAD website.
+The Stanford Question Answering Data-set (SQuAD) is a reading comprehension data-set, consisting of questions posed by crowdworkers on a set of Wikipedia articles. The answer to every question is a segment of text (a span) from the corresponding reading passage. Recently, SQuAD 2.0 has been released, which includes unanswerable questions. The public leaderboard is available on the SQuAD website.
 
 <p align="center">
   <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig1.png" alt="drawing" width="700"/>
@@ -37,8 +37,8 @@ The Sentiment140 data-set contains 1,600,000 tweets which were extracted using T
 
 
 ### Design
-The original labeled data-set (Positive/Negative) contains 1.6M tweets which equally distributed to positive and negative (80k each). We shrank the data-set (due to computational resources) to 20,000 tweets - 10,000 positive and 10,000 negative. In order to match the sentiment analysis data-set to the QA model we did few steps to process the data.
-First, we removed all the mentions from the tweets in order to avoid unrec- ognized words and unbalanced word-vector (figure 3).
+The original labeled data-set (Positive/Negative) contains 1.6M tweets which equally distributed to positive and negative (80k each). We shrank the data-set (due to computational resources) to 20,000 tweets 10,000 positive and 10,000 negative. In order to match the sentiment analysis data-set to the QA model we did few steps to process the data.
+First, we removed all the mentions from the tweets in order to avoid unrecognized words and unbalanced word-vector (figure 3).
 
 <p align="center">
   <img src="https://github.com/HadarPur/NaturalLanguageProcessingIDC/blob/main/Final%20Project/Figures/Fig3.png" alt="drawing" width="700"/>
@@ -77,14 +77,14 @@ The results show that there was a faster convergence for the QA model compared t
 • During our experiments, we noticed that the loss converges too fast. At first we used 10 epochs, and we noticed that it converges for the final loss value after 4-5 epochs. So if we had more resources we would have checked the affect of the learning rate and how it improves the performance.
 
 ### Conclusions and Future work
-The objective of this project was to investigate how a QA model can predict sentiment from the question itself and without using sentiment ’pre-knowledge’. The results showed that if we are taking an appropriate data-set which can mod- ified to the desired format, we can train a QA model to answer on ’sentimental’ questions with a relative success. For future work, there are several factors that need to be considered ahead:
+The objective of this project was to investigate how a QA model can predict sentiment from the question itself and without using sentiment ’pre-knowledge’. The results showed that if we are taking an appropriate data-set which can modified to the desired format, we can train a QA model to answer on ’sentimental’ questions with a relative success. For future work, there are several factors that need to be considered ahead:
 • The model should be trained and evaluated on a larger data set.
 • If using this specific data set, we need to take in consideration the context of the question and combine it with sentiment-related information, in order to improve the detection.
 
 ## References
 1. Twitter Data-set: http://help.sentiment140.com/for-students
 2. NLP Progress: http://nlpprogress.com/
-3. Repository that contains an implementation of the question-answering sys- tem: https://github.com/snexus/nlp-question-answering-system
+3. Repository that contains an implementation of the question-answering system: https://github.com/snexus/nlp-question-answering-system
 4. Sentiment analysis model and evaluation: https://www.kaggle.com/ ananysharma/sentiment-analysis-using-bert
 5. https://towardsdatascience.com/nlp-building-a-question-answering-model-ed0529a68c54
 6. https://blog.paperspace.com/how-to-train-question-answering-machine-learning-models/

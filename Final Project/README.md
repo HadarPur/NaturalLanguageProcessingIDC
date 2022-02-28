@@ -2,7 +2,7 @@
 # Sentiment analysis model converted to questions
 Daniel Shterenberg, Hadar Pur, Rotem Feinblat
 
-Submitted as final project report for the NLP course, IDC, 2021
+Submitted as final project report for the NLP course, Reichman University, 2021
 
 ## Introduction
 The task of a question answering (QA) system is to automatically answer questions asked by humans, expressed in a natural language. In recent years, platforms, where QA systems are applicable, have emerged on the web and gained in popularity. Related to the answering of complex questions, with subjective or ambiguous answers, there is a growing interest in understanding how semantic features can be utilized further to enhance the capability of the systems.
